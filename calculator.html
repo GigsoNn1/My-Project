@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+
+  <div class="square1"></div>
+  
+  <style>
+
+.square1 {
+    position: relative;
+    height: 275px;
+    width: 550px;
+    left: 500px;
+    top: 250px;
+    background-color: #223539;
+    margin-inline-start: 100px;
+    margin-top: 100px;
+    border-radius: 15px;
+    
+  }    
+    .width2233 {
+      position: relative;
+      left: 700px;
+      top: 40px;
+      width: 300px;
+      margin-bottom: 20px;
+    }
+
+    .width2233 input,
+    .width2233 button,
+    .width2233 select {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="width2233" > 
+      <select id="select_id1">
+        <option value="5000">თბილისი</option>
+        <option value="1250">ბათუმი</option>
+        <option value="100">რუსთავი</option>
+        <option value="120">ზუგდიდი</option>
+        <option value="320">საგარეჯო</option>
+        <option value="220">თელავი</option>
+      </select>
+  </div>
+
+  <div class="width2233" > 
+      <select id="select_id2">
+        <option value="3000">კონტეინერი 1</option>
+        <option value="3250">კონტეინერი 2</option>
+        <option value="2500">კონტეინერი 3</option>
+        
+      </select>
+  </div>
+
+
+  <div class="width2233" > 
+    <input type="text" id="resultG">
+  </div>
+
+  <div class="width2233" > 
+    <button onclick="getAmount2()">ცვლილება</button>
+  </div>
+
+
+
+
+    
+
+
+
+     
+  <script>
+    function getAmount2() { 
+
+        d1 = document.getElementById("select_id1").value;
+        d2 = document.getElementById("select_id2").value;
+        document.getElementById("resultG").value = Number(d1) + Number(d2);
+
+        //  alert(d);
+    }
+    </script>
+
+
+</body>
+</html>
