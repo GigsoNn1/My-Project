@@ -165,6 +165,7 @@ body {
     margin-top: -37px;
     width: 159px;
     font-family: 'FiraGO';
+    text-decoration: none;
     
   }
   
@@ -376,7 +377,7 @@ body {
 
 .btn4 {
   position: absolute;
-  top: 55%;
+  top: 57.7%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
