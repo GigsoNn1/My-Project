@@ -21,7 +21,7 @@
     width: 750px;
     left: 500px;
     top: 250px;
-    background-color: #D9042B;
+    background-color: #c2c2c2;
     margin-inline-start: 100px;
     margin-top: 100px;
     border-radius: 15px;
@@ -36,15 +36,18 @@
       width: 300px;
       margin-bottom: 20px;
       
+      
     }
 
     .width2233 input,
     .width2233 button,
     .width2233 select {
-      width: 80%;
-      height: 25px;
+      width: 150%;
+      height: 41px;
       border-radius: 10px;
-      background-color: rgb(235, 235, 235);
+      background-color: rgb(255, 255, 255);
+      font-size: 19px;
+    
     }
      
     .width22333 button {
@@ -54,17 +57,18 @@
       height: 30px;
       border-radius: 20px;
       border:  1px solid black;
-      left: 880px;
+      left: 1150px;
+      top: -360px;
       
     }
 
     .width22334 input {
 
       position: relative;
-      background-color: #D9042B;
+      background-color: #ffffff;
       border-radius: 20px;
-      left: 930px;
-      top: 68px;
+      left: 1195px;
+      top: -280px;
       width: 41px;
       font-size: 18px;
 
@@ -87,10 +91,9 @@
 
   <div class="width2233" > 
       <select id="select_id2">
-        <option value="0">აირჩიე ქვეყანა</option>
-        <option value="900">SOUTH KOREA</option>
-        <option value="1650">USA</option>
-        <option value="750">GEORGIA</option>
+        <option value="0">მანქანის ტიპი</option>
+        <option value="777">სედანი</option>
+        <option value="1200">არა სტანდარტული</option>
      
         
       </select>
@@ -99,12 +102,24 @@
   
   <div class="width2233" > 
     <select id="select_id3">
-      <option value="0">ჩატვირთვის პორტი</option>
-      <option value="777">SEUL</option>
-      <option value="1200">GA</option>
-      <option value="650">POTI</option>
-      
+      <option value="0">შტატი-ქალაქი:</option>
+      <option value="777">ACE-PERRIS 2 - CA</option>
+      <option value="777">ACE-PERRIS - CA</option>
+      <option value="777">ACE-PERRIS</option>
+      <option value="777">ACRON CANTON - OH</option>
+      <option value="777">ALBANY - NY</option>
+      <option value="777">ANAHEIM - CA</option>
+      <option value="777">TULSA - OK</option>
     </select>
+</div>
+
+
+<div class="width2233" > 
+  <select id="select_id4">
+    <option value="0">დანიშნულების ქვეყანა</option>
+    <option value="777">საქართველო</option>
+    
+  </select>
 </div>
 
 
@@ -130,7 +145,8 @@
         d1 = document.getElementById("select_id1").value;
         d2 = document.getElementById("select_id2").value;
         d3 = document.getElementById("select_id3").value;
-        document.getElementById("resultG").value = Number(d1) + Number(d2) + Number(d3);
+        d4 = document.getElementById("select_id4").value;
+        document.getElementById("resultG").value = Number(d1) + Number(d2) + Number(d3) + Number(d4);
 
         //  alert(d);
     }
