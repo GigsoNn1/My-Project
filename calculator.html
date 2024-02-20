@@ -8,35 +8,68 @@
 </head>
 <body>
 
+  
   <div class="square1"></div>
   
   <style>
 
+
+
 .square1 {
     position: relative;
-    height: 275px;
-    width: 550px;
+    height: 375px;
+    width: 750px;
     left: 500px;
     top: 250px;
-    background-color: #223539;
+    background-color: #D9042B;
     margin-inline-start: 100px;
     margin-top: 100px;
     border-radius: 15px;
+    opacity: 95%;
+    border: 1px solid black
     
   }    
     .width2233 {
       position: relative;
-      left: 700px;
-      top: 40px;
+      left: 630px;
+      top: -100px;
       width: 300px;
       margin-bottom: 20px;
+      
     }
 
     .width2233 input,
     .width2233 button,
     .width2233 select {
-      width: 100%;
+      width: 80%;
+      height: 25px;
+      border-radius: 10px;
+      background-color: rgb(235, 235, 235);
     }
+     
+    .width22333 button {
+      position: relative;
+      background-color: #4CAF50;
+      width: 150px;
+      height: 30px;
+      border-radius: 20px;
+      border:  1px solid black;
+      left: 880px;
+      
+    }
+
+    .width22334 input {
+
+      position: relative;
+      background-color: #D9042B;
+      border-radius: 20px;
+      left: 930px;
+      top: 68px;
+      width: 41px;
+      font-size: 18px;
+
+    }
+
   </style>
 </head>
 <body>
@@ -44,30 +77,42 @@
 
   <div class="width2233" > 
       <select id="select_id1">
-        <option value="5000">თბილისი</option>
-        <option value="1250">ბათუმი</option>
-        <option value="100">რუსთავი</option>
-        <option value="120">ზუგდიდი</option>
-        <option value="320">საგარეჯო</option>
-        <option value="220">თელავი</option>
+        <option value="0">აირჩიე საიტი</option>
+        <option value="1300">AUTOMOBY.GE</option>
+        <option value="1250">AUTOWINI</option>
+        <option value="1830">COPART</option>
+   
       </select>
   </div>
 
   <div class="width2233" > 
       <select id="select_id2">
-        <option value="3000">კონტეინერი 1</option>
-        <option value="3250">კონტეინერი 2</option>
-        <option value="2500">კონტეინერი 3</option>
+        <option value="0">აირჩიე ქვეყანა</option>
+        <option value="900">SOUTH KOREA</option>
+        <option value="1650">USA</option>
+        <option value="750">GEORGIA</option>
+     
         
       </select>
   </div>
 
-
+  
   <div class="width2233" > 
+    <select id="select_id3">
+      <option value="0">ჩატვირთვის პორტი</option>
+      <option value="777">SEUL</option>
+      <option value="1200">GA</option>
+      <option value="650">POTI</option>
+      
+    </select>
+</div>
+
+
+  <div class="width22334" > 
     <input type="text" id="resultG">
   </div>
 
-  <div class="width2233" > 
+  <div class="width22333" > 
     <button onclick="getAmount2()">ცვლილება</button>
   </div>
 
@@ -78,17 +123,19 @@
 
 
 
-     
+ 
   <script>
     function getAmount2() { 
 
         d1 = document.getElementById("select_id1").value;
         d2 = document.getElementById("select_id2").value;
-        document.getElementById("resultG").value = Number(d1) + Number(d2);
+        d3 = document.getElementById("select_id3").value;
+        document.getElementById("resultG").value = Number(d1) + Number(d2) + Number(d3);
 
         //  alert(d);
     }
     </script>
+
 
 
 </body>
